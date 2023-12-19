@@ -1,0 +1,33 @@
+.ml16 {
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+  padding: 40px 0;
+  color: aqua;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity: 0;
+  transform: translateY(1em);
+  animation: letterReveal 0.5s forwards ease-in-out;
+}
+
+@keyframes letterReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#box {
+  background-color: beige;
+  margin-top: 50px;
+  padding-top: 50px;
+  height: 650px;
+  opacity: 0.8;
+}
